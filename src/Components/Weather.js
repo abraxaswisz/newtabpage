@@ -2,7 +2,8 @@ import React from "react";
 const APIKEY = "11a003411397b91a1220e563a88b4971";
 class Weather extends React.Component {
   state = {
-    temperature: null
+    temperature: null,
+    weatherDescription: ""
   };
   componentDidMount() {
     this.renderTemperature();
@@ -17,14 +18,22 @@ class Weather extends React.Component {
       .then(response => response.json())
       .then(response => {
         this.setState({
-          temperature: response.main.temp
+          temperature: response.main.temp,
+          weatherDescription: response.weather[0].description
         });
+        console.log(response);
       })
       .catch(error => console.log(error));
   };
 
   render() {
-    return <div>Temperatura dzisiaj: {this.state.temperature}</div>;
+    return (
+      <div>
+        <h4>Temperatura dzisiaj:</h4>
+        <p> {this.state.temperature}</p>
+        <p>{this.state.weatherDescription}</p>
+      </div>
+    );
   }
 }
 
