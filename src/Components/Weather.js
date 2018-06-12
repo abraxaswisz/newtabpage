@@ -1,5 +1,7 @@
 import React from "react";
 
+import WeatherIcon from "./WeatherIcon";
+
 const APIKEY = "11a003411397b91a1220e563a88b4971";
 class Weather extends React.Component {
   state = {
@@ -33,6 +35,7 @@ class Weather extends React.Component {
         <h4>Temperatura dzisiaj:</h4>
         <p>{this.state.temperature}</p>
         <p>{this.state.weatherDescription}</p>
+        <WeatherIcon weatherDescription={this.state.weatherDescription} />
       </div>
     );
   }
