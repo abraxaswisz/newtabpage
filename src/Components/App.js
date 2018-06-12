@@ -1,9 +1,15 @@
-import React, { Component } from "react";
+import React, { Fragment, Component } from "react";
 import "../App.css";
+import Weather from "./Weather";
 
 class App extends Component {
   render() {
-    return <div>Hello</div>;
+    return (
+      <Fragment>
+        <div>Hello</div>
+        <Weather />
+      </Fragment>
+    );
   }
 }
 
