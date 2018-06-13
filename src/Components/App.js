@@ -1,6 +1,7 @@
 import React, { Fragment, Component } from "react";
 import "../App.css";
 import Weather from "./Weather";
+import SearchBar from "./SearchBar";
 
 class App extends Component {
   render() {
@@ -8,6 +9,7 @@ class App extends Component {
       <Fragment>
         <div>Hello</div>
         <Weather />
+        <SearchBar />
       </Fragment>
     );
   }
