@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+#root {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+}
+input {
+  border: none;
+}
