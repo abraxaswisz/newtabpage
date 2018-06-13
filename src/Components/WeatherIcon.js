@@ -5,7 +5,7 @@ class WeatherIcon extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <svg viewBox="0 0 30 30" width="200px" height="200px">
+        <svg viewBox="0 0 30 30" width="150px" height="150px">
           <path d={weatherIcons[this.props.weatherDescription]} />
         </svg>
       </React.Fragment>

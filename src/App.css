@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  margin: 10px;
+}
 #root {
   width: 50%;
   margin: 0 auto;
@@ -10,4 +13,5 @@ body {
 }
 input {
   border: none;
+  font-size: 18px;
 }

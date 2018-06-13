@@ -2,6 +2,14 @@ import React from "react";
 
 import WeatherIcon from "./WeatherIcon";
 
+function convertDate(date) {
+  let getDate = Date.parse(date);
+  getDate = new Date(getDate);
+  let convertedDate = `${getDate.getDate()}/${getDate.getMonth() +
+    1}/${getDate.getFullYear()}`;
+  return convertedDate;
+}
+
 const APIKEY = "11a003411397b91a1220e563a88b4971";
 class Weather extends React.Component {
   state = {
@@ -12,11 +20,11 @@ class Weather extends React.Component {
     nextFullMoon: ""
   };
   componentDidMount() {
-    this.renderTemperature();
-    this.renderMoonPhases();
+    this.getTemperature();
+    this.getMoonPhases();
   }
 
-  renderTemperature = () => {
+  getTemperature = () => {
     const city = "Wrocław";
 
     const weatherURL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${APIKEY}&units=metric`;
@@ -32,7 +40,7 @@ class Weather extends React.Component {
       })
       .catch(error => console.error(error));
   };
-  renderMoonPhases = () => {
+  getMoonPhases = () => {
     const todaysDate = new Date();
     console.log(todaysDate.getDay());
     const todaysMonth = todaysDate.getMonth() + 1;
@@ -69,7 +77,7 @@ class Weather extends React.Component {
         <p>Pogoda: {weatherDescription}</p>
         <WeatherIcon weatherDescription={weatherDescription} />
         <p>Faza księzyca: {currentMoonPhase}</p>
-        <p>Następna pełnia: {nextFullMoon}</p>
+        <p>Następna pełnia: {convertDate(nextFullMoon)}</p>
       </div>
     );
   }
