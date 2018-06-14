@@ -9,11 +9,11 @@ import MoonPhase from "./MoonPhase";
 export default function App() {
   return (
     <React.Fragment>
+      <Weather />
+      <MoonPhase />
       <DateComponent />
       <Time />
       <div>Hello</div>
-      <Weather />
-      <MoonPhase />
       <SearchBar />
     </React.Fragment>
   );

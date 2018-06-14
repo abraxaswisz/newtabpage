@@ -34,19 +34,21 @@ class Weather extends React.Component {
   };
 
   render() {
-    const {
-      temperature,
-      humidity,
-      weatherDescription,
-      currentMoonPhase,
-      nextFullMoon
-    } = this.state;
+    const { temperature, humidity, weatherDescription } = this.state;
     return (
       <div>
-        <p>Temperatura: {temperature}</p>
-        <p>Wilgotność: {humidity}</p>
-        <p>Pogoda: {weatherDescription}</p>
-        <WeatherIcon weatherDescription={weatherDescription} />
+        <div id="temperature" className="weather-details">
+          <WeatherIcon iconName={"temperatureIcon"} size={35} />
+          <span>{temperature} &deg;</span>
+        </div>
+        <div id="humidity" className="weather-details">
+          <WeatherIcon iconName={"humidityIcon"} size={35} />{" "}
+          <span>{humidity}</span>
+        </div>
+        <div id="weather-description" className="weather-details">
+          <WeatherIcon iconName={weatherDescription} size={35} />
+          <span>{weatherDescription}</span>
+        </div>
       </div>
     );
   }
