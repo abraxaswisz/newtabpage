@@ -36,13 +36,13 @@ class Weather extends React.Component {
   render() {
     const { temperature, humidity, weatherDescription } = this.state;
     return (
-      <div>
+      <div id="weather">
         <div id="temperature" className="weather-details">
           <WeatherIcon iconName={"temperatureIcon"} size={35} />
           <span>{temperature} &deg;</span>
         </div>
         <div id="humidity" className="weather-details">
-          <WeatherIcon iconName={"humidityIcon"} size={35} />{" "}
+          <WeatherIcon iconName={"humidityIcon"} size={40} />
           <span>{humidity}</span>
         </div>
         <div id="weather-description" className="weather-details">

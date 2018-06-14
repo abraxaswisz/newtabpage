@@ -4,19 +4,51 @@ body {
 }
 p {
   margin: 10px;
+  color: white;
 }
 #root {
-  width: 50%;
   margin: 0 auto;
   text-align: center;
   height: 100vh;
+  background: url(background.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 input {
+  color: white;
   border: none;
-  font-size: 18px;
+  border-color: transparent;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+  display: block;
+  outline: none;
+  width: 400px;
+  top: 250px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+#info {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#moon {
+  display: flex;
+  align-items: center;
 }
 
 .weather-details {
   display: flex;
   align-items: center;
+  margin: 0 15px;
+}
+
+#weather {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
 }

@@ -41,10 +41,10 @@ export default class MoonPhase extends Component {
   render() {
     const { currentMoonPhase, nextFullMoon } = this.state;
     return (
-      <React.Fragment>
-        <p>Faza księzyca: {currentMoonPhase}</p>
-        <p>Następna pełnia: {convertDate(nextFullMoon)}</p>
-      </React.Fragment>
+      <div id="moon">
+        <span>Faza księzyca: {currentMoonPhase}</span>
+        <span>Następna pełnia: {convertDate(nextFullMoon)}</span>
+      </div>
     );
   }
 }
