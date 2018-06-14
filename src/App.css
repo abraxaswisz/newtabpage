@@ -15,3 +15,8 @@ input {
   border: none;
   font-size: 18px;
 }
+
+.weather-details {
+  display: flex;
+  align-items: center;
+}
