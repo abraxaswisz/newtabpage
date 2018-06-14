@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import SearchBar from "./SearchBar";
 import DateComponent from "./DateComponent";
 import Time from "./Time";
+import MoonPhase from "./MoonPhase";
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <Time />
       <div>Hello</div>
       <Weather />
+      <MoonPhase />
       <SearchBar />
     </React.Fragment>
   );
