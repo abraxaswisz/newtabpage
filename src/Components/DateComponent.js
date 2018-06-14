@@ -12,7 +12,7 @@ export default class DateComponent extends React.Component {
       month = "0" + month;
     }
     let year = date.getFullYear();
-    let fullDate = `Today is ${day}/${month}/${year}`;
+    let fullDate = `${day}/${month}/${year}`;
     return fullDate;
   };
   render() {
