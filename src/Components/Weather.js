@@ -1,5 +1,5 @@
 import React from "react";
-
+import PropTypes from "prop-types";
 import WeatherIcon from "./WeatherIcon";
 
 function convertDate(date) {
@@ -12,6 +12,9 @@ function convertDate(date) {
 
 const APIKEY = "11a003411397b91a1220e563a88b4971";
 class Weather extends React.Component {
+  static propTypes = {
+    weatherDescription: PropTypes.string
+  };
   state = {
     temperature: null,
     weatherDescription: "",
