@@ -4,8 +4,12 @@ import { weatherIcons } from "../weatherIcons";
 export default function WeatherIcon(props) {
   return (
     <React.Fragment>
-      <svg viewBox="0 0 30 30" width="150px" height="150px">
-        <path d={weatherIcons[props.weatherDescription]} />
+      <svg
+        viewBox="0 0 30 30"
+        width={`${props.size}px`}
+        height={`${props.size}px`}
+      >
+        <path d={weatherIcons[props.iconName]} />
       </svg>
     </React.Fragment>
   );
