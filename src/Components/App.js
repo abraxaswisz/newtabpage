@@ -1,14 +1,14 @@
-import React, { Fragment, Component } from "react";
+import React from "react";
 import "../App.css";
 import Weather from "./Weather";
 import SearchBar from "./SearchBar";
 
 export default function App() {
   return (
-    <Fragment>
+    <React.Fragment>
       <div>Hello</div>
       <Weather />
       <SearchBar />
-    </Fragment>
+    </React.Fragment>
   );
 }
