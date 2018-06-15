@@ -43,15 +43,16 @@ export default class MoonPhase extends Component {
   render() {
     const { currentMoonPhase, nextFullMoon } = this.state;
     return (
-      <div id="moon">
+      <div className="moon-details">
         <span>
           <Icon iconName={currentMoonPhase} size={35} />
         </span>
-        <span>Następna pełnia:</span>
-        <span>
+        <div className="moon-details">
+          <span>Następna pełnia:</span>
           <Icon iconName={"Full Moon"} size={25} />
-        </span>
-        <span>{convertDate(nextFullMoon)}</span>
+          <span>{nextFullMoon ? convertDate(nextFullMoon) : "null"} </span>
+          <span />
+        </div>
       </div>
     );
   }
