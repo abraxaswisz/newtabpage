@@ -28,6 +28,7 @@ export default class MoonPhase extends Component {
       .then(response => response.json())
       .then(response => response.phasedata)
       .then(response => {
+        console.log(response);
         const moonPhaseArray = [...response];
         this.setState({ currentMoonPhase: moonPhaseArray[0].phase });
         const nextFullMoon = moonPhaseArray.find(

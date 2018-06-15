@@ -9,23 +9,22 @@ p {
 #root {
   margin: 0 auto;
   text-align: center;
-  height: 100vh;
-  background: url(background.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-input {
-  color: white;
+
+#search-bar {
+  position: relative;
+  top: 40vh;
   border: none;
   border-color: transparent;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 5px 10px rgb(211, 217, 228);
   background: transparent;
   display: block;
   outline: none;
   width: 400px;
-  top: 250px;
   margin: 0 auto;
   padding: 10px;
 }

@@ -6,9 +6,10 @@ export default function SearchBar() {
       <form method="get" action="https://www.google.com/search">
         <input
           type="text"
-          autocomplete="off"
+          autoComplete="off"
           name="q"
           placeholder="Search..."
+          id="search-bar"
         />
       </form>
     </React.Fragment>
