@@ -1,7 +1,7 @@
 import React from "react";
 import { icons } from "../icons";
 
-export default function WeatherIcon(props) {
+export default function Icon(props) {
   return (
     <React.Fragment>
       <svg

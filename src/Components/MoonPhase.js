@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import WeatherIcon from "./WeatherIcon";
+import Icon from "./Icon";
 
 function convertDate(date) {
   let getDate = Date.parse(date);
@@ -44,8 +44,14 @@ export default class MoonPhase extends Component {
     const { currentMoonPhase, nextFullMoon } = this.state;
     return (
       <div id="moon">
-        <span>Faza księzyca: {currentMoonPhase}</span>
-        <span>Następna pełnia: {convertDate(nextFullMoon)}</span>
+        <span>
+          <Icon iconName={currentMoonPhase} size={35} />
+        </span>
+        <span>Następna pełnia:</span>
+        <span>
+          <Icon iconName={"Full Moon"} size={25} />
+        </span>
+        <span>{convertDate(nextFullMoon)}</span>
       </div>
     );
   }

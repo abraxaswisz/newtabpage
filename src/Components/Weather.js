@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import WeatherIcon from "./WeatherIcon";
+import Icon from "./Icon";
 
 const APIKEY = "11a003411397b91a1220e563a88b4971";
 
@@ -39,15 +39,15 @@ class Weather extends React.Component {
     return (
       <div id="weather">
         <div id="temperature" className="weather-details">
-          <WeatherIcon iconName={"temperatureIcon"} size={35} />
+          <Icon iconName={"temperatureIcon"} size={35} />
           <span>{temperature} &deg;</span>
         </div>
         <div id="humidity" className="weather-details">
-          <WeatherIcon iconName={"humidityIcon"} size={40} />
+          <Icon iconName={"humidityIcon"} size={40} />
           <span>{humidity}</span>
         </div>
         <div id="weather-description" className="weather-details">
-          <WeatherIcon iconName={weatherDescription} size={35} />
+          <Icon iconName={weatherDescription} size={35} />
           <span>{weatherDescription}</span>
         </div>
       </div>
