@@ -5,6 +5,7 @@ import SearchBar from "./SearchBar";
 import DateComponent from "./DateComponent";
 import Time from "./Time";
 import MoonPhase from "./MoonPhase";
+import Icon from "./Icon";
 
 export default function App() {
   return (

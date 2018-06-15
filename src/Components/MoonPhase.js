@@ -44,8 +44,9 @@ export default class MoonPhase extends Component {
     const { currentMoonPhase, nextFullMoon } = this.state;
     return (
       <div className="moon-details">
+        <span>Faza księzyca</span>
         <span>
-          <Icon iconName={currentMoonPhase} size={35} />
+          <Icon iconName={currentMoonPhase} size={25} />
         </span>
         <div className="moon-details">
           <span>Następna pełnia:</span>
