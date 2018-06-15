@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import WeatherIcon from "./WeatherIcon";
 
 function convertDate(date) {
   let getDate = Date.parse(date);

@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import WeatherIcon from "./WeatherIcon";
 
 const APIKEY = "11a003411397b91a1220e563a88b4971";
+
 class Weather extends React.Component {
   static propTypes = {
     weatherDescription: PropTypes.string

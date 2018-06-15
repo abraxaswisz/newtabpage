@@ -1,5 +1,5 @@
 import React from "react";
-import { weatherIcons } from "../weatherIcons";
+import { icons } from "../icons";
 
 export default function WeatherIcon(props) {
   return (
@@ -9,7 +9,7 @@ export default function WeatherIcon(props) {
         width={`${props.size}px`}
         height={`${props.size}px`}
       >
-        <path d={weatherIcons[props.iconName]} />
+        <path d={icons[props.iconName]} />
       </svg>
     </React.Fragment>
   );
