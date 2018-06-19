@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
 
 body {
   margin: 0;
@@ -19,16 +20,12 @@ p {
 }
 
 #search-bar {
-  position: relative;
-  top: 40vh;
   border: none;
   border-color: transparent;
   box-shadow: 3px 5px 10px rgb(211, 217, 228);
   background: transparent;
-  display: block;
   outline: none;
   width: 400px;
-  margin: 0 auto;
   padding: 10px;
 }
 
@@ -62,6 +59,11 @@ p {
   justify-content: flex-end;
 }
 
+#main {
+  position: relative;
+  top: 25vh;
+}
+
 #time {
   font-weight: 900;
   margin: 0 auto;
@@ -72,4 +74,5 @@ p {
   font-weight: 300;
   margin: 0 auto;
   font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
