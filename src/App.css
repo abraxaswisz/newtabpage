@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 p {
   margin: 10px;
@@ -30,6 +33,7 @@ p {
 }
 
 #info {
+  font-weight: 300;
   display: flex;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.2);
