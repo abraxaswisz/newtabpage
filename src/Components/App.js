@@ -2,9 +2,8 @@ import React from "react";
 import "../App.css";
 import Weather from "./Weather";
 import SearchBar from "./SearchBar";
-import DateComponent from "./DateComponent";
-import Time from "./Time";
 import MoonPhase from "./MoonPhase";
+import DateAndTime from "./DateAndTime";
 
 export default function App() {
   return (
@@ -13,8 +12,7 @@ export default function App() {
         <MoonPhase />
         <Weather />
       </section>
-      <Time />
-      <DateComponent />
+      <DateAndTime />
       <div>Hello</div>
       <SearchBar />
     </React.Fragment>
