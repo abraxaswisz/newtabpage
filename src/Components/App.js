@@ -12,9 +12,10 @@ export default function App() {
         <MoonPhase />
         <Weather />
       </section>
-      <DateAndTime />
-      <div>Hello</div>
-      <SearchBar />
+      <section id="main">
+        <DateAndTime />
+        <SearchBar />
+      </section>
     </React.Fragment>
   );
 }

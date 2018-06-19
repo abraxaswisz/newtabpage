@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400");
 
 body {
   margin: 0;
@@ -30,6 +30,8 @@ p {
 }
 
 #info {
+  font-family: "Roboto Slab", "serif";
+  font-size: 0.9rem;
   font-weight: 300;
   display: flex;
   justify-content: space-between;
@@ -65,7 +67,9 @@ p {
 }
 
 #time {
-  font-weight: 900;
+  font-family: "Roboto Slab", "serif";
+  letter-spacing: 0.3rem;
+  font-weight: 300;
   margin: 0 auto;
   font-size: 5rem;
 }
