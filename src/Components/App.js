@@ -4,6 +4,7 @@ import Weather from "./Weather";
 import SearchBar from "./SearchBar";
 import MoonPhase from "./MoonPhase";
 import DateAndTime from "./DateAndTime";
+import RandomImage from "./RandomImage";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Weather />
       </section>
       <section id="main">
+        <RandomImage />
         <DateAndTime />
         <SearchBar />
       </section>
