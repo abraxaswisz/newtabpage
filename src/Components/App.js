@@ -13,8 +13,8 @@ export default function App() {
         <MoonPhase />
         <Weather />
       </section>
-      <DateComponent />
       <Time />
+      <DateComponent />
       <div>Hello</div>
       <SearchBar />
     </React.Fragment>

@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function DateComponent() {
-  return <React.Fragment>{new Date().toLocaleDateString()}</React.Fragment>;
+  return (
+    <React.Fragment>
+      <h3 id="date">{new Date().toLocaleDateString()}</h3>
+    </React.Fragment>
+  );
 }

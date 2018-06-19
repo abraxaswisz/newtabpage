@@ -18,7 +18,9 @@ export default class Time extends React.Component {
   }
   render() {
     return (
-      <React.Fragment> {this.state.time.toLocaleTimeString()}</React.Fragment>
+      <React.Fragment>
+        <h2 id="time">{this.state.time.toLocaleTimeString()}</h2>
+      </React.Fragment>
     );
   }
 }
