@@ -11,7 +11,7 @@ export default class RandomImage extends Component {
 
   renderImage = () => {
     unsplash.photos
-      .getRandomPhoto()
+      .getRandomPhoto({ query: "mountains" })
       .then(res => res.json())
       .then(json => {
         console.log(json);
